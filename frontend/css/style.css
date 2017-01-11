@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+select, input { display: block;}
+img { border: none; }
+a img { border: none; }
+ul { list-style: none; }
+p { margin: 0 0 .6em; }
+a:hover { text-decoration: underline; }
+a, a span {
+    color: #3498db;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    background-image: url(../images/bg.jpg);
+    /*background-size: cover;*/
+    background-attachment: fixed;
+
+
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+        flex-direction: column;
+
+    min-height: 100vh;
+}
+
+.flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+body {
+    min-width: 320px;
+}
+
+body:before,
+body:after {
+    content: '';
+    display: block;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+.innerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    width: 100%;
+}
+
+.mainContainer {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.formCol, .formQuoter {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+.formElement {
+    padding: 10px;
+}
+
+.formElement label { 
+    color: white;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.formElement select {
+    margin-top: 2px;
+}
+
+.formElement select,
+.formElement input {
+    width: 100%;
+    padding: 5px;   
+    box-sizing: border-box;
+    min-height: 27px;
+}
+
+.button:hover { background-color: rgba(0, 0, 0, .75); }
+
+.button {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+
+.error h1 {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.error {
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    padding: 30px;
+    width: 320px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.title:hover {
+    color: #08c;
+}
+
+.title {
+    color: white;
+    font-weight: 100;
+    font-size: 32px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgb(137, 164, 191);
+    margin-bottom: 10px;
+}
+
+.items, .trades { padding-bottom: 20px; }
+.trades { color: white; }
+.trades table { width: 100%; }
+.trades table td {
+    padding: 10px;
+}
+
+.clearPrice span {
+    color: #39d428;
+}
+
+.jumps { font-weight: 100; }
+.jumps span { 
+    margin-left: 50px;
+    color: #39d428;
+    font-weight: 400;
+}
+
+.destinaition > div {text-align: center;}
+.destinaition > div:first-child{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed rgb(137, 164, 191);
+}
+
+.prices td span,
+.totals td span { font-weight: 100; }
+
+.part td { background-color: rgba(0, 0, 0, .75); }
+
+.capital {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px dashed rgb(137, 164, 191);   
+}
+
+@media all and (max-width: 1200px) {
+    .innerContainer {
+        max-width: 600px;
+    }
+    
+    .formQuoter.flex { display: block; }
+}
+
+@media all and (max-width: 630px) {
+    .innerContainer {
+        max-width: 300px;
+    }
+    
+    .flex { display: block; }
+}
